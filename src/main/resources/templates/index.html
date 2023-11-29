@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/fa-all.min.css" rel="stylesheet">
+    <style>
+        .dropdown-toggle.toggle-notif::after{
+            content: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-body-tertiary shadow">
+    <div class="container">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="/siswa">Siswa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-item ms-md-auto me-md-3 dropdown">
+                    <a class="nav-link dropdown-toggle toggle-notif d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-bell position-relative"></i>
+                        <span class="badge text-bg-success" style="font-size: 10px;" id="count-notif">0</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" id="list-notif">
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Task</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+</div>
+
+<div class="toast-container position-fixed top-0 end-0">
+</div>
+
+<script src="/assets/bootstrap.bundle.min.js"></script>
+<script src="/assets/jquery.min.js"></script>
+<script src="/assets/sockjs.min.js"></script>
+<script src="/assets/stomp.min.js"></script>
+<script src="/assets/script.js"></script>
+</body>
+</html>
